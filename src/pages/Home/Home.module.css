@@ -1,0 +1,27 @@
+.homeContainer {
+  max-width: 600px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.createPostBtn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.createPostBtn:hover {
+  background: #2980b9;
+}
