@@ -4,7 +4,8 @@ import { useDispatch } from "react-redux";
 import { createPost } from "../../redux/postSlice";
 import ImageKit from "imagekit-javascript";
 
-const BASE_URL = "http://192.168.1.12:5000"; // Replace with your backend URL
+// const BASE_URL = "http://192.168.1.12:5000"; // Replace with your backend URL
+ const BASE_URL = "https://prtbackend-s6g4.onrender.com/api";
 
 const CreatePostModal = ({ closeModal }) => {
   const imagekit = new ImageKit({

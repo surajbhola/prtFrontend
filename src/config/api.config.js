@@ -2,3 +2,4 @@
 export const baseUrl = "https://prtbackend-s6g4.onrender.com/api";
 
 // https://prtbackend-s6g4.onrender.com
+console.log(`Base URL: ${baseUrl}`);
