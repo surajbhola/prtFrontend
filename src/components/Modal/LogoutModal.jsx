@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { baseUrl } from "../../config/api.config";
+import { useNavigate } from "react-router-dom";
 import styles from "./LogoutModal.module.css";
 
 const LogoutModal = ({ onClose }) => {
   const [isLoggingOut, setIsLoggingOut] = useState(false);
-
+  const navigate = useNavigate();
   const handleLogout = async () => {
     setIsLoggingOut(true);
     try {
-      localStorage.removeItem("user"); 
-      localStorage.removeItem("token"); 
-      window.location.reload(); 
+      localStorage.removeItem("user");
+      localStorage.removeItem("token");
+
+      navigate("/auth");
     } catch (error) {
       console.error("Logout failed:", error);
       alert("Logout failed. Please try again.");
